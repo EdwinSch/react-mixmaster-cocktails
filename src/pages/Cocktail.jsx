@@ -1,5 +1,5 @@
-const Cokctail = () => {
-  return <h2>Cokctail</h2>;
+const Cocktail = () => {
+  return <h2>Cocktail</h2>;
 };
 
-export default Cokctail;
+export default Cocktail;
