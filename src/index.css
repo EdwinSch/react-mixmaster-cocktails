@@ -464,3 +464,18 @@ a {
     padding-top: 0;
   }
 }
+
+/* SEARCHFORM Component */
+.search-form {
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.search-form-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.search-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
