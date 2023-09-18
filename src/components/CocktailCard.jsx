@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
 const CocktailCard = ({
   idDrink,
@@ -7,6 +7,8 @@ const CocktailCard = ({
   strDrinkThumb,
   strGlass,
 }) => {
+  const data = useOutletContext();
+
   return (
     <article className="card">
       <figure className="img-container">
