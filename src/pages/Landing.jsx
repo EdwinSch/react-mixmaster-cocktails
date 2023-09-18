@@ -1,11 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import axios from "axios";
+import CocktailList from "../components/CocktailList";
 
 const cocktailSearchUrl =
   "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
 export const loader = async () => {
-  const searchTerm = "margarita";
+  const searchTerm = "";
   const response = await axios.get(`${cocktailSearchUrl}${searchTerm}`);
 
   console.log(response);
@@ -15,9 +16,13 @@ export const loader = async () => {
 
 const Landing = () => {
   const { drinks, searchTerm } = useLoaderData();
-  console.log(drinks);
+  // console.log(drinks);
 
-  return <h2>Landing</h2>;
+  return (
+    <>
+      <CocktailList drinks={drinks} />
+    </>
+  );
 };
 
 export default Landing;
