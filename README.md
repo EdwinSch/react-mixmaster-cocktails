@@ -5,7 +5,7 @@ Showcasing: working with and creating multi-pages with React Router, API calls, 
 
 ### Live Demo
 
-🚀 [Deployed App](https://)
+🚀 [Deployed App](https://fluffy-capybara-239dfa.netlify.app/)
 
 #### 🛠️ Build with
 
